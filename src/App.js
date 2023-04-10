@@ -1,9 +1,13 @@
 import './App.css';
+import Item from './Item';
 
-function App() {
+const App = (props) => {
+
+  let todoItems = props.state.map(element => <Item todoItem={element.message} />);
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app-header">
         <div className='header-title'><h1>ToDo List</h1></div>
       </header>
       <hr />
@@ -18,9 +22,7 @@ function App() {
         </div>
         <hr />
         <div className='todo-items-wrapper'>
-          <div className='todo-item'>
-
-          </div>
+          {todoItems}
         </div>
         <hr />
       </body>
