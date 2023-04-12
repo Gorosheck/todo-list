@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Item from './Item';
+import { addToDo } from '.';
 
 const App = (props) => {
 
@@ -10,7 +11,7 @@ const App = (props) => {
 
   const addItem = (props) => {
     let text = newItemElement.current.value;
-
+    addToDo(text);
   }
 
   return (
