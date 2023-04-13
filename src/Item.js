@@ -1,4 +1,3 @@
-
 const Item = (props) => {
   return (
     <div>{props.todoItem}</div>

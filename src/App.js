@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Item from './Item';
-import { addToDo } from '.';
 
 const App = (props) => {
 
@@ -9,9 +8,9 @@ const App = (props) => {
 
   let newItemElement = React.createRef();
 
-  const addItem = (props) => {
-    let text = newItemElement.current.value;
-    addToDo(text);
+  const addItem = () => {
+    let textToDo = newItemElement.current.value;
+    props.addToDo(textToDo);
   }
 
   return (
