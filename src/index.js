@@ -14,13 +14,18 @@ let items = [
 export let addToDo = (textToDo) => {
   let newTodo = { id: 5, message: textToDo };
   items.push(newTodo);
+  rerender();
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App state={items} addToDo={addToDo} />
-  </React.StrictMode>
-);
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+let rerender = () => {
+  root.render(
+    <React.StrictMode>
+      <App state={items} addToDo={addToDo} />
+    </React.StrictMode>
+  );
+}
+rerender();
 reportWebVitals();

@@ -11,6 +11,7 @@ const App = (props) => {
   const addItem = () => {
     let textToDo = newItemElement.current.value;
     props.addToDo(textToDo);
+    newItemElement.current.value = '';
   }
 
   return (
