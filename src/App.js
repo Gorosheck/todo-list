@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Item from './Item';
+import Item from './item/Item';
 
 const App = (props) => {
 
