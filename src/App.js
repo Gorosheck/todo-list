@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Item from './item/Item';
+import Header from './header/header';
 
 const App = (props) => {
 
@@ -16,9 +17,7 @@ const App = (props) => {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <div className='header-title'><h1>ToDo List</h1></div>
-      </header>
+      <Header />
       <hr />
       <body>
         <div className='todo-body-wrapper'>
