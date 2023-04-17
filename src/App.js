@@ -22,7 +22,7 @@ const App = (props) => {
       <body>
         <div className='todo-body-wrapper'>
           <div>
-            <textarea ref={newItemElement} placeholder='add your new todo item' rows='3' cols='100' />
+            <input ref={newItemElement} placeholder='add your new todo item' rows='3' cols='100' />
           </div>
           <div>
             <button className='button-add-item' onClick={addItem}>ADD item</button>
