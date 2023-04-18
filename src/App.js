@@ -21,7 +21,15 @@ const App = (props) => {
       <Header />
       <hr />
       <body>
-        <Body />
+        {/* <Body /> */}
+        <div className={style.todoBodyWrapper}>
+          <div>
+            <input ref={newItemElement} placeholder='add your new todo item' rows='3' cols='100' />
+          </div>
+          <div>
+            <button className={style.buttonAddItem} onClick={addItem}>ADD item</button>
+          </div>
+        </div>
         <hr />
         <div className='todo-items-wrapper'>
           {todoItems}
