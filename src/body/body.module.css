@@ -1,0 +1,12 @@
+.todoBodyWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 400px;
+}
+.buttonAddItem  {
+  margin: 5px;
+  width: 200px;
+  height: 55px;
+  background-color:bisque;
+}

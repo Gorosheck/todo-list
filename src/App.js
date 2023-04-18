@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Item from './item/Item';
 import Header from './header/header';
+import Body from './body/body';
 
 const App = (props) => {
 
@@ -20,14 +21,7 @@ const App = (props) => {
       <Header />
       <hr />
       <body>
-        <div className='todo-body-wrapper'>
-          <div>
-            <input ref={newItemElement} placeholder='add your new todo item' rows='3' cols='100' />
-          </div>
-          <div>
-            <button className='button-add-item' onClick={addItem}>ADD item</button>
-          </div>
-        </div>
+        <Body />
         <hr />
         <div className='todo-items-wrapper'>
           {todoItems}

@@ -1,13 +1,1 @@
 
-.todo-body-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 400px;
-}
-.button-add-item  {
-  margin: 5px;
-  width: 200px;
-  height: 55px;
-  background-color:bisque;
-}
